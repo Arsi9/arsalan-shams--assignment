@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        font-family: sans-serif;
+        text-align: center;
+        font-size: 20px;
+      }
+      h1 {
+        margin: 15px 0 10px 0;
+      }
+      section {
+        display: inline-block;
+        border: 3px solid black;
+        width: 30%;
+        background-color: #999;
+        position: relative;
+        margin: 10px;
+      }
+      #header {
+        text-align: right;
+      }
+      .title {
+        text-align: center;
+        font-weight: bold;
+        display: inline-block;
+        border-bottom: 3px solid black;
+        border-left: 3px solid black;
+        width: 130px;
+      }
+      section > p {
+        margin: 10px;
+      }
+      .chicken {
+        background-color: rgb(233, 167, 167);
+      }
+      .beef {
+        background-color: rgb(215, 80, 56);
+        color: #fff;
+      }
+      .sushi {
+        background-color: rgb(235, 235, 138);
+      }
+      @media (min-width: 768px) and (max-width: 991px) {
+        #sushi {
+          display: block;
+          width: auto;
+        }
+        #chicken,
+        #beef {
+          width: 47%;
+        }
+      }
+      @media (max-width: 767px) {
+        #chicken {
+          display: block;
+          width: auto;
+        }
+        #beef {
+          display: block;
+          width: auto;
+        }
+        #sushi {
+          display: block;
+          width: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>our menu</h1>
+    <section id="chicken">
+      <div id="header">
+        <div class="title chicken">chicken</div>
+      </div>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur
+        esse laborum dolore voluptatem saepe dolores aliquam minima temporibus
+        inventore quaerat odit, amet nulla officia sequi dignissimos error
+        sapiente impedit vel.
+      </p>
+    </section>
+    <section id="beef">
+      <div id="header">
+        <div class="title beef">beef</div>
+      </div>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur
+        esse laborum dolore voluptatem saepe dolores aliquam minima temporibus
+        inventore quaerat odit, amet nulla officia sequi dignissimos error
+        sapiente impedit vel.
+      </p>
+    </section>
+    <section id="sushi">
+      <div id="header">
+        <div class="title sushi">sushi</div>
+      </div>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur
+        esse laborum dolore voluptatem saepe dolores aliquam minima temporibus
+        inventore quaerat odit, amet nulla officia sequi dignissimos error
+        sapiente impedit vel.
+      </p>
+    </section>
+  </body>
+</html>
